@@ -1,8 +1,10 @@
 
 var buttonElement = document.getElementById("beolvas");
 var tableElement = document.getElementById("table");
+var loaderElement = document.getElementById("loadingGif");
 
 buttonElement.addEventListener('click', function(){
+    loaderElement.classList.remove('hidden');
     $.ajax({
         url: "https://archive.org/metadata/TheAdventuresOfTomSawyer_201303",
         method: "GET",
@@ -60,7 +62,7 @@ buttonElement.addEventListener('click', function(){
                 
                 table.appendChild(tr);
             }
-            
+            loaderElement.classList.add('hidden');
             tbody.appendChild(table);
         }
     });
