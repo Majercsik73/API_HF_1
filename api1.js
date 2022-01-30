@@ -1,7 +1,6 @@
 
-var buttonElement = document.getElementById("beolvas");
-var tableElement = document.getElementById("table");
-var loaderElement = document.getElementById("loadingGif");
+var buttonElement = document.getElementById("beolvas1");
+var loaderElement = document.getElementById("loadingGif1");
 
 buttonElement.addEventListener('click', function(){
     loaderElement.classList.remove('hidden');
@@ -12,7 +11,7 @@ buttonElement.addEventListener('click', function(){
             console.log(data);
         
             var leiras = data.metadata.description;
-            document.getElementById("leiras").innerHTML = "Description: " + leiras;
+            document.getElementById("leiras1").innerHTML = "Description: " + leiras;
 
             var tbody = document.getElementById("tbody");
             tbody.innerHTML = "";
