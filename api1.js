@@ -13,8 +13,8 @@ buttonElement.addEventListener('click', function(){
             var leiras = data.metadata.description;
             document.getElementById("leiras1").innerHTML = "Description: " + leiras;
 
-            var tbody = document.getElementById("tbody");
-            tbody.innerHTML = "";
+            var tbody1 = document.getElementById("tbody1");
+            tbody1.innerHTML = "";
 
             var table = document.createElement("table");
 
@@ -62,7 +62,7 @@ buttonElement.addEventListener('click', function(){
                 table.appendChild(tr);
             }
             loaderElement.classList.add('hidden');
-            tbody.appendChild(table);
+            tbody1.appendChild(table);
         }
     });
 });  
