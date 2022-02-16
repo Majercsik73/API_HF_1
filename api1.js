@@ -17,7 +17,7 @@ buttonElement.addEventListener('click', function(){
             tbody1.innerHTML = "";
 
             var table = document.createElement("table");
-
+            var cimsor = true;
             for(var i = 3; i < 9; i++){
                 var tr = document.createElement("tr");
 
@@ -28,7 +28,7 @@ buttonElement.addEventListener('click', function(){
                 var cella5 = document.createElement("td");
                 var cella6 = document.createElement("td");                
                     
-                if(i==3){
+                if(cimsor){
                     cella1.innerHTML = "Név";
                     cella1.style.fontSize= "150%";
                     cella2.innerHTML = "Forrás";
@@ -41,6 +41,8 @@ buttonElement.addEventListener('click', function(){
                     cella5.style.fontSize= "150%";
                     cella6.innerHTML = "Hash md5";
                     cella6.style.fontSize= "150%";
+
+                    cimsor = false;
                 }
                 else{
                     

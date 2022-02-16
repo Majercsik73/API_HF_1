@@ -15,7 +15,7 @@ buttonElement.addEventListener('click', function(){
             tbody2.innerHTML = "";
 
             var table = document.createElement("table");
-
+            var cimsor  = true;
             for(var i = 0; i < 164; i=i+4){
                 var tr = document.createElement("tr");
 
@@ -23,13 +23,15 @@ buttonElement.addEventListener('click', function(){
                 var cella2 = document.createElement("td");
                 var cella3 = document.createElement("td");          
                     
-                if(i==0){
+                if(cimsor){
                     cella1.innerHTML = "Jelölés";
                     cella1.style.fontSize= "150%";
                     cella2.innerHTML = "Megnevezés";
                     cella2.style.fontSize= "150%";
                     cella3.innerHTML = "Legkisebb egység";
                     cella3.style.fontSize= "150%";
+
+                    cimsor = false;
                 }
                 else{
                     
